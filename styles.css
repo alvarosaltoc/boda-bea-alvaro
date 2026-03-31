@@ -780,9 +780,11 @@ background-color: rgba(255, 255, 255, 0.9);
 border-color: var(--color-principal);
 color: var(--color-principal);
 }
-.gift-detail {
+  .gift-detail {
   text-align: center;
   margin-top: 0.75rem;
   font-size: 0.9rem;
   line-height: 1.7;
+  width: 100%;
 }
+
