@@ -343,123 +343,138 @@
           <option value="">Elige una opción</option>
           <option value="micro">1. Dame el micro</option>
           <option value="quizas">2. Quizás motivado por el fragor del momento</option>
-          <option value="no_llueva">3. Chicos, no quiero que llueva</option>
-</select>
-</div>
+          <option value="no_llueva">3. Chicos, no quiero           que llueva</option>
+        </select>
+      </div>
+      <div class="form-field">
+        abel for="vena_artistica">
+          <span class="form-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20 9 4h6l5 16"/><path d="M10 16h4"/></svg></span>
+          Si tienes una vena artística conocida o desconocida, dinos cuál de estas opciones encaja más contigo (te guardaremos el secreto):
+        </label>
+        <select id="vena_artistica" name="vena_artistica">
+          <option value="">Elige una opción</option>
+          <option value="prado">1. Expongo en el Museo del Prado el mes que viene</option>
+          <option value="me_defiendo">2. Me gusta y me defiendo bastante</option>
+          <option value="pictionary">3. Sirvo para el pictionary</option>
+          <option value="rotulador">4. Mejor no darme un rotulador</option>
+        </select>
+      </div>
+      <div class="form-field">
+        abel for="comentarios">
+          <span class="form-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-5l-4 3-1-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/></svg></span>
+          Comentarios, recomendaciones de canciones o algún cotilleo que nos quieras contar
+        </label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Aquí puedes contarnos lo que quieras"></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Nueva confirmación de asistencia">
+      <input type="hidden" name="_language" value="es">
+      <button type="submit" class="btn btn-primary">Enviar confirmación</button>
+    </form>
+  </section>
 
-<!-- Vena artística -->
-<div class="form-field">
-<label for="vena_artistica">
-<span class="form-icon">
-<svg viewBox="0 0 24 24" aria-hidden="true">
-<path d="M4 20 9 4h6l5 16" />
-<path d="M10 16h4" />
-</svg>
-</span>
-Si tienes una vena artística conocida o desconocida, dinos cuál de estas opciones encaja más contigo (te guardaremos el secreto):
-</label>
-<select id="vena_artistica" name="vena_artistica">
-<option value="">Elige una opción</option>
-<option value="prado">1. Expongo en el Museo del Prado el mes que viene</option>
-<option value="me_defiendo">2. Me gusta y me defiendo bastante</option>
-<option value="pictionary">3. Sirvo para el pictionary</option>
-<option value="rotulador">4. Mejor no darme un rotulador</option>
-</select>
-</div>
-
-<!-- Comentarios finales -->
-<div class="form-field">
-<label for="comentarios">
-<span class="form-icon">
-<svg viewBox="0 0 24 24" aria-hidden="true">
-<path d="M5 5h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-5l-4 3-1-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z" />
-</svg>
-</span>
-Comentarios, recomendaciones de canciones o algún cotilleo que nos quieras contar
-</label>
-<textarea
-id="comentarios"
-name="comentarios"
-rows="4"
-placeholder="Aquí puedes contarnos lo que quieras"
-></textarea>
-</div>
-
-<!-- Campos especiales de Formspree -->
-<input type="hidden" name="_subject" value="Nueva confirmación de asistencia">
-<input type="hidden" name="_language" value="es">
-
-<button type="submit" class="btn btn-primary">
-Enviar confirmación
-</button>
-</form>
-</div>
-</section>
-
-<section id="regalos" class="section">
-<h2>Lista de bodas</h2>
-<p>
-Lo más importante para nosotros es que estéis allí acompañándonos en un día tan especial.
-Si aun así queréis ayudarnos con nuestro futuro proyecto juntos, os dejamos nuestras opciones:
-</p>
-
-<div class="gift-box">
-  <p>Transferencia bancaria</p>
-  <div class="iban-row">
-    <span id="iban-text">ES27 1583 0001 1491 9604 4532</span>
-    <button type="button" class="copy-button" onclick="copyIban()" aria-label="Copiar IBAN">
-      <svg class="icon-copy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="9" y="9" width="13" height="13" rx="2"/>
-        <path d="M5 15h-1a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/>
-      </svg>
-    </button>
+  <!-- FOTO 6 -->
+  <div class="photo-divider vertical">
+    <img src="img/Foto15.jpeg" alt="Beatriz y Álvaro" loading="lazy">
   </div>
- <p class="gift-detail">
-  <strong>Banco:</strong> Revolut<br>
-  <strong>BIC/SWIFT:</strong> REVOESM2
-</p>
-<p>Muchas gracias de corazón por vuestro regalo.</p>
-</div>
 
+  <!-- LISTA DE BODAS -->
+  <section id="regalos" class="section">
+    <h2>Lista de bodas</h2>
+    <p>Lo más importante para nosotros es que estéis allí acompañándonos en un día tan especial. Si aun así queréis ayudarnos con nuestro futuro proyecto juntos, os dejamos nuestras opciones:</p>
+    <div class="gift-box">
+      <p>Transferencia bancaria</p>
+      <div class="iban-row">
+        <span id="iban-text">ES27 1583 0001 1491 9604 4532</span>
+        <button type="button" class="copy-button" onclick="copyIban()" aria-label="Copiar IBAN">
+          <svg class="icon-copy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2"/>
+            <path d="M5 15h-1a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"/>
+          </svg>
+        </button>
+      </div>
+      <p class="gift-detail">
+        <strong>Banco:</strong> Revolut<br>
+        <strong>BIC/SWIFT:</strong> REVOESM2
+      </p>
+      <p>Muchas gracias de corazón por vuestro regalo.</p>
+    </div>
+  </section>
 
-<footer class="site-footer">
-<p>© La pareja más mona del mundo</p>
-</footer>
-<script>
-function copyIban() {
-const iban = document.getElementById('iban-text').innerText.replace(/\\s+/g, '');
-navigator.clipboard.writeText(iban).then(function() {
-alert('IBAN copiado: ' + iban);
-}).catch(function() {
-alert('No se ha podido copiar el IBAN. Puedes copiarlo manualmente.');
-});
-}
-</script>
-<script>
-const asistenciaSelect = document.getElementById('asistencia');
-const acompanadoSelect = document.getElementById('acompanado');
-const acompananteField = document.querySelector('.form-field-acompanante');
-const acompananteInput = document.getElementById('nombre_acompanante');
+  <!-- CARRUSEL -->
+  <div class="carousel">
+    <div class="carousel-track" id="carouselTrack">
+      <img src="img/Foto25.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto26.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto1.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto16.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto18.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto27.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto13.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/nosotros-2.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto2.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto6.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto7.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto8.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto9.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto10.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto11.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto12.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto14.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto17.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto19.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto21.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto22.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+      <img src="img/Foto24.jpeg" alt="Beatriz y Álvaro" loading="lazy">
+    </div>
+    <div class="carousel-buttons">
+      <button class="carousel-btn" onclick="scrollCarousel(-1)" aria-label="Anterior">&#8592;</button>
+      <button class="carousel-btn" onclick="scrollCarousel(1)" aria-label="Siguiente">&#8594;</button>
+    </div>
+  </div>
 
-function actualizarAcompanante() {
-const viene = asistenciaSelect && asistenciaSelect.value === 'si';
-const vieneAcompanado = acompanadoSelect && acompanadoSelect.value === 'si';
+  <footer class="site-footer">
+    <p>© La pareja más mona del mundo</p>
+  </footer>
 
-if (viene && vieneAcompanado) {
-acompananteField.style.display = 'flex';
-acompananteInput.required = true;
-} else {
-acompananteField.style.display = 'none';
-acompananteInput.required = false;
-acompananteInput.value = '';
-}
-}
+  <script>
+    function copyIban() {
+      const iban = document.getElementById('iban-text').innerText.replace(/\s+/g, '');
+      navigator.clipboard.writeText(iban).then(function() {
+        alert('IBAN copiado: ' + iban);
+      }).catch(function() {
+        alert('No se ha podido copiar el IBAN. Puedes copiarlo manualmente.');
+      });
+    }
 
-if (asistenciaSelect && acompanadoSelect && acompananteField && acompananteInput) {
-asistenciaSelect.addEventListener('change', actualizarAcompanante);
-acompanadoSelect.addEventListener('change', actualizarAcompanante);
-}
-</script>
+    const asistenciaSelect = document.getElementById('asistencia');
+    const acompanadoSelect = document.getElementById('acompanado');
+    const acompananteField = document.querySelector('.form-field-acompanante');
+    const acompananteInput = document.getElementById('nombre_acompanante');
+
+    function actualizarAcompanante() {
+      const viene = asistenciaSelect && asistenciaSelect.value === 'si';
+      const vieneAcompanado = acompanadoSelect && acompanadoSelect.value === 'si';
+      if (viene && vieneAcompanado) {
+        acompananteField.style.display = 'flex';
+        acompananteInput.required = true;
+      } else {
+        acompananteField.style.display = 'none';
+        acompananteInput.required = false;
+        acompananteInput.value = '';
+      }
+    }
+
+    if (asistenciaSelect && acompanadoSelect && acompananteField && acompananteInput) {
+      asistenciaSelect.addEventListener('change', actualizarAcompanante);
+      acompanadoSelect.addEventListener('change', actualizarAcompanante);
+    }
+
+    function scrollCarousel(direction) {
+      const track = document.getElementById('carouselTrack');
+      const scrollAmount = track.offsetWidth * 0.85;
+      track.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+    }
+  </script>
 
 </body>
 </html>
