@@ -795,21 +795,30 @@ color: var(--color-principal);
 
 .photo-divider {
   width: 100%;
-  max-height: 480px;
-  overflow: hidden;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .photo-divider img {
   width: 100%;
   max-height: 480px;
   object-fit: cover;
-  object-position: center;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   display: block;
 }
 
 .photo-divider.vertical img {
   max-height: 600px;
   object-position: center top;
+}
+
+@media (max-width: 640px) {
+  .photo-divider img,
+  .photo-divider.vertical img {
+    max-height: 320px;
+  }
 }
 
 /* =========================================
@@ -846,8 +855,6 @@ color: var(--color-principal);
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
-  position: relative;
-  overflow: hidden;
 }
 
 .carousel-track {
@@ -858,6 +865,7 @@ color: var(--color-principal);
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   padding-bottom: 0.5rem;
+  align-items: center;
 }
 
 .carousel-track::-webkit-scrollbar {
@@ -866,13 +874,14 @@ color: var(--color-principal);
 
 .carousel-track img {
   flex: 0 0 auto;
-  width: 80%;
+  width: auto;
   max-width: 600px;
-  height: 420px;
-  object-fit: cover;
+  height: 380px;
+  object-fit: contain;
   border-radius: 1rem;
   scroll-snap-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 .carousel-buttons {
@@ -904,12 +913,6 @@ color: var(--color-principal);
 
 @media (max-width: 640px) {
   .carousel-track img {
-    width: 90%;
-    height: 260px;
-  }
-
-  .photo-divider img,
-  .photo-divider.vertical img {
-    max-height: 320px;
+    height: 240px;
   }
 }
